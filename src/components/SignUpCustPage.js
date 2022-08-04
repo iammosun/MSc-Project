@@ -19,7 +19,7 @@ const SignUpCustPage = () => {
 
                     <div className="heading-btn">
                         <div>
-                            <form className="userForm">
+                            <form action='' method='POST' className="userForm">
 
                                 <input type="button" id="createWithGoogle" name="createWithGoogle" className="userFormInput userSearchBtn" value="Sign Up with Google" />
                                 <p>OR</p>

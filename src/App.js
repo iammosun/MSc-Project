@@ -10,8 +10,20 @@ import ProDetailsPage from './components/ProDetailsPage'
 // import Header from './components/Header'
 
 function App() {
+  let testDisplay;
+
+
+  fetch("http://raptor.kent.ac.uk/home/service-to-you/src/api/apiSelectAllCust.php")
+    .then(async (res) => res.json())
+    // .then(json => { testDisplay = json.Stringify() })
+    // .then(json = { json.Stringify() })
+    .then((json1) => { testDisplay = json1 })
+
+
   return (
     <>
+      <p>{testDisplay}</p>
+
       <Router>
         <Routes>
           <Route path="/" exact element={<Homepage />} />
